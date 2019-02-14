@@ -11,6 +11,12 @@ public class DateTimeUtil
     public static boolean isHappyHour(LocalDateTime dateTime)
     {
         boolean isHappyHour = false;
+
+        if (dateTime.getHour() >= 16 && dateTime.getHour() <= 19)
+        {
+            isHappyHour = true;
+        }
+
         return isHappyHour;
     }
 }

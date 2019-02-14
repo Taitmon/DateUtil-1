@@ -60,6 +60,7 @@ class DateUtilTest
     {
         assertEquals(CHRISTMAS_2000, DateUtil.getNextChristmas(NEW_YEARS_2000));
         assertEquals(CHRISTMAS_2000, DateUtil.getNextChristmas(CHRISTMAS_1999));
+        assertEquals(CHRISTMAS_1999, DateUtil.getNextChristmas(CHRISTMAS_EVE_1999));
     }
 
     @Test
